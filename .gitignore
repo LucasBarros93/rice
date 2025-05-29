@@ -1,0 +1,9 @@
+*.log
+*.bak
+*.swp
+*.cache
+*.out
+node_modules/
+.vscode/
+.DS_Store
+*.pyc
