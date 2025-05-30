@@ -52,7 +52,7 @@ super + alt + Escape
 
 # make sxhkd reload its configuration files:
 super + Escape
-	pkill -USR1 -x sxhkd
+	bspc wm -r
 
 # #
 # # bspwm hotkeys
