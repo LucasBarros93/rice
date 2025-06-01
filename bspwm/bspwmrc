@@ -18,4 +18,4 @@ bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
 ~/.config/polybar/launch.sh &
-feh --bg-fill ~/Pictures/wpp/clouds0.jpeg &
+feh --bg-fill ~/Pictures/wpp/samuraibebop.png &
