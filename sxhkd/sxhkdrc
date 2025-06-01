@@ -14,6 +14,9 @@ super + f
 super + s
     pgrep spotify || spotify
 
+super + w
+    stremio
+
 # fechar janela
 super + BackSpace
 	bspc node -c
