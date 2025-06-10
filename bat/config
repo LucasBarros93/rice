@@ -1,0 +1,4 @@
+--theme="rose-pine"
+--style="numbers,changes,header,header-filesize" #,grid
+--paging=never
+
