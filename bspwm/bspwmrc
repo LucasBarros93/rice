@@ -17,5 +17,19 @@ bspc rule -a mplayer2 state=floating
 bspc rule -a Kupfer.py focus=on
 bspc rule -a Screenkey manage=off
 
+# Rosé pine 
+bspc config focused_border_color "#9ccfd8"
+bspc config normal_border_color "#6e6a86"
+
+#Fixed cursor
+xsetroot -cursor_name left_ptr &
+
+#Launch polybar 
 ~/.config/polybar/launch.sh &
+
+#Wallpaper
 feh --bg-fill ~/Pictures/wpp/samuraibebop.png &
+
+#Active picom
+picom &
+

@@ -25,11 +25,21 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 local plugins = {
-    { "rose-pine/neovim", name = "rose-pine" }
+    { "rose-pine/neovim", name = "rose-pine" },
+    {"nvim-neo-tree/neo-tree.nvim",
+    branch = "v3.x",
+    dependencies = {
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons",
+            "MunifTanjim/nui.nvim",
+        }
+    },
 }
 local opts = {}
 
-require("lazy").setup(plugins, opts)
+vim.keymap.set('n','<C-n>', ':Neotree filesystem reveal left<CR>', {})
+
+require("lazy").setup("plugins")
 
 require("rose-pine").setup()
 vim.cmd.colorscheme "rose-pine"

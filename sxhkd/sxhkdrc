@@ -15,7 +15,19 @@ super + s
     pgrep spotify || spotify
 
 super + w
-    stremio
+    flatpak run com.stremio.Stremio
+
+# controlar brilho
+{XF86MonBrightnessUp, XF86MonBrightnessDown}
+    brightnessctl set {+10%, 10%-}
+
+# controlar volume
+{XF86AudioRaiseVolume, XF86AudioLowerVolume}
+    pactl set-sink-volume @DEFAULT_SINK@ {+5%, -5%}
+XF86AudioMute
+    pactl set-sink-mute @DEFAULT_SINK@ toggle
+
+
 
 # fechar janela
 super + BackSpace
