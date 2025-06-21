@@ -52,8 +52,27 @@ zinit light romkatv/powerlevel10k
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
 
+#fzf
+zinit light junegunn/fzf
+#binds fzf
+if [[ -f ~/.local/share/zinit/plugins/junegunn---fzf/shell/key-bindings.zsh ]]; then
+  source ~/.local/share/zinit/plugins/junegunn---fzf/shell/key-bindings.zsh
+fi
+
+if [[ -f ~/.local/share/zinit/plugins/junegunn---fzf/shell/completion.zsh ]]; then
+  source ~/.local/share/zinit/plugins/junegunn---fzf/shell/completion.zsh
+fi
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-alias ls='ls --color=auto'
+alias ls='eza --icons'
 alias v='nvim'
+
+export FZF_DEFAULT_OPTS='
+  --height=60%
+  --layout=reverse
+  --border
+  --preview="[[ -f {} ]] && bat --style=numbers --color=always --line-range :500 {} || [[ -d {} ]] && eza --tree --icons {}"
+  
+'
