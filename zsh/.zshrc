@@ -76,3 +76,4 @@ export FZF_DEFAULT_OPTS='
   --preview="[[ -f {} ]] && bat --style=numbers --color=always --line-range :500 {} || [[ -d {} ]] && eza --tree --icons {}"
   
 '
+
