@@ -27,7 +27,21 @@ super + w
 XF86AudioMute
     pactl set-sink-mute @DEFAULT_SINK@ toggle
 
+# print + ctrl+c
+Print
+    mkdir -p ~/Pictures/screenshots && \
+    escrotum -s ~/Pictures/screenshots/screenshot_%Y%m%d_%H%M%S.png -e 'at now + 5 minutes <<< "rm \"$f\""; xclip -selection clipboard -t image/png -i "$f"'
+super + Print
+    mkdir -p ~/Pictures/screenshots && \
+    escrotum ~/Pictures/screenshots/screenshot_%Y%m%d_%H%M%S.png -e 'at now + 5 minutes <<< "rm \"$f\""; xclip -selection clipboard -t image/png -i "$f"'
 
+# Music player
+XF86AudioPlay
+    playerctl play-pause
+super + XF86AudioPlay 
+    playerctl next
+super + XF86AudioPlay + shift
+    playerctl previous
 
 # fechar janela
 super + BackSpace

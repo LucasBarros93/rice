@@ -48,9 +48,18 @@ zinit light-mode for \
 #[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 zinit light romkatv/powerlevel10k
 
+#VIM MODE
+ZVM_LINE_INIT_MODE='$ZVM_MODE_NORMAL'         
+ZVM_VI_INSERT_ESCAPE_BINDKEY='jk'          
+ZVM_CURSOR_STYLE_ENABLED=true               
+ZVM_STATUSLINE_ENABLE=true
+
+zinit light jeffreytse/zsh-vi-mode
+
 #other utils
 zinit light zsh-users/zsh-completions
 zinit light zsh-users/zsh-syntax-highlighting
+#zinit light hlissner/zsh-autopair
 
 #fzf
 zinit light junegunn/fzf
