@@ -31,5 +31,5 @@ xsetroot -cursor_name left_ptr &
 feh --bg-fill ~/Pictures/wpp/samuraibebop.png &
 
 #Active picom
-picom &
+picom --config ~/.config/picom/picom.conf &
 
