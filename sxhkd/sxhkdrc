@@ -52,19 +52,19 @@ super + space
 	rofi -show drun
 
 # mover foco entre janelas
-super + {Left,Down,Up,Right}
+super + {h,j,k,l}
     bspc node -f {west,south,north,east}
 
 # trocar janelas de lugar
-super + shift + {Left,Down,Up,Right}
+super + shift + {h,j,k,l}
     bspc node -s {west,south,north,east}
 
 # expand a window by moving one of its side outward
-super + alt + {Left,Down,Up,Right}
+super + alt + {h,j,k,l}
     bspc node -z {left -20 0,bottom 0 20,top 0 -20,right 20 0}
 
 # contract a window by moving one of its side inward
-super + alt + shift + {Left,Down,Up,Right}
+super + alt + shift + {h,j,k,l}
 	bspc node -z {right -20 0,top 0 20,bottom 0 -20,left 20 0}
 
 # Mudar para o desktop 1-9
