@@ -14,8 +14,8 @@ super + f
 super + s
     pgrep spotify || spotify
 
-super + w
-    flatpak run com.stremio.Stremio
+super + o
+    obsidian
 
 # controlar brilho
 {XF86MonBrightnessUp, XF86MonBrightnessDown}
