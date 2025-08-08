@@ -12,7 +12,9 @@ return {
 				null_ls.builtins.formatting.black,
 
 				-- C / C++
-				null_ls.builtins.formatting.clang_format,
+                null_ls.builtins.formatting.clang_format.with({
+                    extra_args = { "--style=file", "--fallback-style=LLVM", "--assume-filename", vim.fn.expand("~/.config/nvim/clang-format") },
+                }),
 			},
 		})
 

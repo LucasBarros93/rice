@@ -43,6 +43,10 @@ super + XF86AudioPlay
 super + XF86AudioPlay + shift
     playerctl previous
 
+# lockscreen
+super + shift + l
+    betterlockscreen -l pixel
+
 # fechar janela
 super + BackSpace
 	bspc node -c
