@@ -44,7 +44,7 @@ super + XF86AudioPlay + shift
     playerctl previous
 
 # lockscreen
-super + shift + l
+super + ctrl + l
     betterlockscreen -l pixel
 
 # fechar janela
