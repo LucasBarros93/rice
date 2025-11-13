@@ -3,5 +3,5 @@
 *.swp
 *.cache
 *.out
-.vscode/
+/kitty/*theme*
 .DS_Store
