@@ -30,7 +30,7 @@ xsetroot -cursor_name left_ptr &
 ~/.config/polybar/launch.sh &
 
 #Wallpaper
-feh --bg-fill ~/Pictures/wpp/samuraibebop.png &
+feh --bg-fill ~/Pictures/wpp/wpp.* &
 
 #Active picom
 picom --config ~/.config/picom/picom.conf &
