@@ -4,4 +4,4 @@
 *.cache
 *.out
 /kitty/*theme*
-.DS_Store
+/tmux/plugins/
