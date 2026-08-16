@@ -77,7 +77,8 @@ tooltip {
   padding: 8px 10px;
 }
 
-#clock {
+#clock,
+#custom-clock {
     color: @pink;
 }
 /* Estado normal: mostra base e esconde hover */

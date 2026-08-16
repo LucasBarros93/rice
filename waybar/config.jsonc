@@ -28,19 +28,19 @@
     },
     "group/clockmodule": {
         "orientation": "horizontal",
-        "modules": ["clock#base", "clock#hover"],
+        "modules": ["custom/clock", "clock#hover"],
         "tooltip": false
       }, 
 
-    "clock#base": {
+    "custom/clock": {
+        "exec": "~/.config/waybar/scripts/clock.sh",
         "interval": 1,
-        "timezone": "America/Sao_Paulo",
-        "format": " {:%H:%M}",
+        "return-type": "json",
         "tooltip": false
     },
     "clock#hover": {
         "interval": 1,
-        "timezone": "America/Sao_Paulo",
+        "timezone": "Europe/Paris",
         "format": " {:%b %d, %Y}",
         "tooltip": true, 
         "tooltip-format": "\n<tt>{calendar}</tt>",
